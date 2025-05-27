@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Blogs</title>
+</head>
+<body id="body" style="background-color:#F4F7FF">
+        <div class="container mt-2 gap-3 d-flex flex-column">
+    <div style="height:8.91vh;" class="bg-white rounded p-2 px-3 d-flex justify-content-between">
+            <div class=" d-flex gap-2">
+                <img src="assets/logo.png" alt="" style="width: 40px;">
+                <p class="p-0 m-0 pt-1 h5">Dev<b>Board</b></p>
+            </div>
+                <button class="btn btn-primary">Back to Desk</button>
+        </div>
+        <b class="h4 text-center">Blogs</b>
+        <div class="bg-white w-100 rounded"><div class="p-2"><b>Question-1: What are the different ways to select an element in the DOM?</b></div><hr class="m-0"><div class="p-2">Ans: there are many different ways to select an element in the DOM. We can select an element in the DOM by getElementById(). This method select an element by it's ID. We can also select an element in the DOM by getElementsByClassName(). This method select one or more elements by their ClassName. We can also select an element in the DOM by getElementsByTagName(). This method select one or more elements by their own name. We can also select an element in the DOM by querySelector(). This method select an element by it's own name or it's class name or it's id or own name and class name and in many ways. We can also select one or more elements in the DOM by querySelectorAll(). it is same as queryselector but it select one or many element, querySelector() doesn't.</div></div>
+        <div class="bg-white w-100 rounded"><div class="p-2"><b>Question-2: What is the difference between innerHTML, innerText, and textContent ?</b></div><hr class="m-0"><div class="p-2">Ans: innerHTML returns inside all property of selected element but innerText and textContent only the text. innerHTML and textContent return with all space between two word but innertext return single space. textContent return full text but innertext return only visible text.</div></div>
+        <div class="bg-white w-100 rounded"><div class="p-2"><b>Question-3: What is event delegation in the DOM?</b></div><hr class="m-0"><div class="p-2">Event delegation reduces the number of event listeners in the DOM, which can improve performance, especially when working with a large number of elements or dynamically added elements. By handling events at the parent level, memory usage and processing load are reduced.</div></div>
+        <div class="bg-white w-100 rounded"><div class="p-2"><b>Question-4: What is event bubbling in the DOM?</b></div><hr class="m-0"><div class="p-2">Event bubbling directs an event to its target. It works like this:
+
+When an element (like a button) is clicked, an event is directed to the element.
+If an event handler is set for the element, the event handler is triggered.
+Then the event "bubbles up" to the elements parent.
+If an event handler is set for the parent, this event handler is triggered.
+The event continues to bubble, until it reaches the top.</div></div>
+        <div class="bg-white w-100 rounded"><div class="p-2"><b>Question-5: How do you create, add, and remove elements using JavaScript?</b></div><hr class="m-0"><div class="p-2">Ans:
+create: <br>
+let p = document.createElement("p"); <br>
+//a paragraph tag created <br>
+add: <br>
+document.getElementById("demo").appendChild(p); <br>
+//added the paragraph tag inside the demo <br>
+remove: <br>
+document.getElementById("demo").removeChild(p); <br>
+//remove the paragraph tag inside the demo</div></div>
+
+        </div>
+        <script>
+            document.querySelector("button").addEventListener("click",function(){
+                window.location.href = "index.html";
+            });
+        </script>
+</body>
+</html>
